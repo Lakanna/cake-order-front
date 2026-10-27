@@ -17,7 +17,7 @@ const OrderPage = () => {
   //   "Review Order",
   // ];
 
-  const [currentStep, setcurrentStep] = useState(3);
+  const [currentStep, setcurrentStep] = useState(0;
 
   const [order, setOrder] = useState({
     collectionDate: new Date(),
@@ -25,7 +25,7 @@ const OrderPage = () => {
     size: '',
     sponge: 'Plain',
     icing: '',
-    jam: false,
+    jam: '',
     decorations: [],
     price: 0,
   });

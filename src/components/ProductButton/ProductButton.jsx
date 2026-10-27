@@ -20,7 +20,7 @@ export const ProductButton = ({
         <FaCheck className={css.checkMark} />
       </div>
 
-      <img className={css.img} src={img} alt="" />
+      <img className={css.img} src={img} alt={`Image of ${value}`} />
       <div className={css.descriptionBox}>
         <p>{value}</p>
 

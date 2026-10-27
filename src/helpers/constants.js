@@ -12,6 +12,10 @@ import RV from '../pictures/sponges/rv.jpg';
 import Choc from '../pictures/sponges/choc.jpg';
 import Fudge from '../pictures/sponges/fudge.jpg';
 import Biscuit from '../pictures/sponges/biscuit.jpg';
+import buttercream from '../pictures/cream/buttercream.jpg';
+import freshcream from '../pictures/cream/freshCream.jpg';
+import Jam from '../pictures/filling/jam.jpg';
+import NoJam from '../pictures/filling/noJam.jpg';
 
 export const OrdersList = ['Order a Cake', 'Order Cupcakes'];
 
@@ -56,4 +60,22 @@ export const SpongesType = [
     description: 'Melted chocolate and cookies',
     img: Biscuit,
   },
+];
+
+export const CreamTypes = [
+  {
+    label: 'Buttercream',
+    description: 'Thick & sweet',
+    img: buttercream,
+  },
+  {
+    label: 'Fresh Cream',
+    description: 'Light & airy',
+    img: freshcream,
+  },
+];
+
+export const Filling = [
+  { label: 'Yes, add jam', value: true, img: Jam },
+  { label: 'No, thanks', value: false, img: NoJam },
 ];

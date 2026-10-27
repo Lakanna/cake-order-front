@@ -6,7 +6,7 @@ import logo from '../../pictures/pettits (1).webp';
 export const LogoLink = () => {
   return (
     <Link className={css.logoLink} to="/" aria-label="Go to homepage">
-      <img src={logo} alt="Logo" height="60" />
+      <img src={logo} alt="Logo" height="50" />
       <p className={css.logoText}>Gorey</p>
     </Link>
   );

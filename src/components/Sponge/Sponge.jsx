@@ -28,6 +28,11 @@ export const Sponge = ({ order, updateOrder }) => {
             Please choose a biscuit cake size in the previous step to continue.
           </p>
         )}
+      {order.size === '10" Round' && order.sponge !== 'Biscuit' && (
+        <p className={css.errorSize}>
+          Please choose square cake shape in the previous step to continue.
+        </p>
+      )}
     </section>
   );
 };

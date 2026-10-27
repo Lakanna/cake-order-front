@@ -16,3 +16,12 @@
   text-decoration: none;
   color: var(--background);
 }
+
+.burgerMenu {
+  border: none;
+  color: var(--background);
+  background-color: var(--brand-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
