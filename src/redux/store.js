@@ -12,8 +12,6 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-import businessesReducer from "./businesses/slice.js";
-import bookingsReducer from "./bookings/slice.js";
 import authReducer from "./auth/slice";
 
 const persistConfig = {
@@ -26,8 +24,6 @@ const persistedReducer = persistReducer(persistConfig, authReducer);
 
 export const store = configureStore({
   reducer: {
-    businesses: businessesReducer,
-    bookings: bookingsReducer,
     auth: persistedReducer,
   },
   middleware: (getDefaultMiddleware) =>

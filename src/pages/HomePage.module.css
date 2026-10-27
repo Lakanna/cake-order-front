@@ -1,0 +1,52 @@
+.mainSection {
+  background-image: url("../pictures/cake.jpg");
+
+  background-size: cover;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 300px;
+}
+
+.textSection {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  /* display: flex; */
+  /* justify-content: flex-start;
+  flex-direction: column; */
+  text-align: left;
+}
+
+.pageTitle {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--brand-red);
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-family: var(--font-body);
+
+  color: var(--text-secondary);
+}
+
+.btnSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.heartIcon {
+  color: var(--brand-red);
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,53 @@
+.progressiveBar {
+  display: flex;
+  gap: 20px;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--brand-red);
+  background-color: var(--brand-red);
+}
+
+.step::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 2px);
+  /* left: 100%; */
+  transform: translateY(-50%);
+  width: 25px;
+  height: 1px;
+  background-color: var(--text-secondary);
+}
+
+.step:last-child::after {
+  display: none;
+}
+
+.step.completed::after {
+  background-color: var(--brand-red);
+}
+.completed {
+  color: var(--background);
+}
+
+.active {
+  color: var(--brand-yellow);
+}
+
+.pending {
+  background-color: var(--background);
+  color: var(--text-secondary);
+  border-color: var(--text-secondary);
+}

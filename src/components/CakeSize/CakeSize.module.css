@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cakeSizeText {
+  color: var(--brand-red);
+  margin-top: 1rem;
+}

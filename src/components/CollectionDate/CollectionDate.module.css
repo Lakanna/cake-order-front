@@ -1,0 +1,125 @@
+.timeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem auto;
+}
+
+.timeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  min-width: 100px;
+  background-color: var(--background);
+  border: 1px solid var(--text-secondary);
+  cursor: pointer;
+}
+
+.selectedTime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  min-width: 100px;
+  background-color: var(--brand-red);
+  color: var(--background);
+  border: 1px solid var(--brand-red);
+}
+
+.calendarContainer {
+  margin: 2rem 0;
+}
+
+/**
+  |============================
+  | calendar
+  |============================
+*/
+.calendar {
+  width: 100%;
+  max-width: 340px;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  font-family: inherit;
+  box-shadow: 0 4px 18px rgb(0 0 0 / 6%);
+}
+
+/* Прибираємо стандартну рамку календаря .calendar button {
+  border: none;
+  font-family: inherit;
+}
+
+/* Назва місяця та стрілки */
+/* .calendar :global(.react-calendar__navigation) {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.calendar :global(.react-calendar__navigation button) {
+  min-width: 36px;
+  background: white;
+  border-radius: 10px;
+  color: #333;
+  font-size: 18px;
+}
+
+.calendar :global(.react-calendar__navigation button:enabled:hover) {
+  background: #fde7ea;
+} */
+
+/* Дні тижня */
+/* .calendar :global(.react-calendar__month-view__weekdays) {
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+/* Кнопки з числами */
+/* .calendar :global(.react-calendar__tile) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  max-width: 38px;
+  margin: 3px auto;
+  padding: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #333;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+} */
+
+/* Наведення */
+/* .calendar :global(.react-calendar__tile:enabled:hover) {
+  background: #fde7ea;
+}  */
+
+/* Вибраний день — червоний кружечок */
+.calendar :global(.react-calendar__tile--active),
+.calendar :global(.react-calendar__tile--active:enabled:hover),
+.calendar :global(.react-calendar__tile--active:enabled:focus) {
+  background: var(--brand-red);
+  color: white;
+  border-radius: 50%;
+}
+
+/* Сьогодні */
+/* .calendar :global(.react-calendar__tile--now) {
+  background: #fff4c2;
+  color: #333;
+  border-radius: 50%;
+} */
+
+/* Неактивні дати */
+.calendar :global(.react-calendar__tile:disabled) {
+  background: transparent;
+  color: #ccc;
+}

@@ -1,11 +1,16 @@
 import { Suspense } from "react";
 import { AppBar } from "../AppBar/AppBar";
+import { Footer } from "../Footer/Footer.jsx";
+import css from "./Layout.module.css";
 
 export const Layout = ({ children }) => {
   return (
-    <div style={{ maxWidth: 960, margin: "0 auto", padding: "0 16px" }}>
+    <div className={css.container}>
       <AppBar />
-      <Suspense fallback={null}>{children}</Suspense>
+      <main className={css.mainContent}>
+        <Suspense fallback={null}>{children}</Suspense>
+      </main>
+      <Footer />
     </div>
   );
 };
