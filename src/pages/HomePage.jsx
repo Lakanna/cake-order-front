@@ -35,10 +35,10 @@ const HomePage = () => {
         ))}
         {/* <Cake className={css.cakeIcon} /> */}
       </section>
-
+      <div className={ css.decor}>
       <GoHeartFill size="20" className={css.heartIcon} />
       <p>Sweet moments</p>
-
+</div>
       {/* <p>
         Step {step + 1} of {steps.length}
       </p>

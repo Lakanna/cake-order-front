@@ -1,0 +1,41 @@
+.text {
+  margin-top: 0.85rem;
+}
+
+.messageField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid var(--brand-red);
+  border-radius: 10px;
+  background-color: var(--surface-pink);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 16px;
+  margin: 1rem auto;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.input::placeholder {
+  color: var(--text-secondary);
+}
+
+.input:focus {
+  outline: none;
+  border-color: #b88787;
+  box-shadow: 0 0 0 3px rgb(184 135 135 / 15%);
+}
+
+.hint {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+}

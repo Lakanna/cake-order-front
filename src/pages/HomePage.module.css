@@ -1,5 +1,5 @@
 .mainSection {
-  background-image: url("../pictures/cake.jpg");
+  background-image: url('../pictures/cake.jpg');
 
   background-size: cover;
   -webkit-mask-image: linear-gradient(
@@ -49,4 +49,11 @@
 .heartIcon {
   color: var(--brand-red);
   margin-bottom: 0.5rem;
+}
+
+.decor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

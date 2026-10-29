@@ -1,15 +1,7 @@
 import { StepsList } from '../../helpers/constants';
 import css from './ProgressiveBar.module.css';
 
-export const ProgressiveBar = ({ currentStep }) => {
-  // const StepsList = [
-  //   { step: 1, label: "Collection Date" },
-  //   { step: 2, label: "Cake Size" },
-  //   { step: 3, label: "Sponge" },
-  //   { step: 4, label: "Icing & Filling" },
-  //   { step: 5, label: "Design" },
-  //   { step: 6, label: "Review Order" },
-  // ];
+export const ProgressiveBar = ({ currentStep, onClick }) => {
   return (
     <div className={css.progressiveBar}>
       {StepsList.map((step, index) => {
@@ -19,10 +11,18 @@ export const ProgressiveBar = ({ currentStep }) => {
             : index + 1 === currentStep
               ? css.active
               : css.pending;
+
+        const destStep = index + 1;
+
         return (
-          <div key={index} className={`${css.step} ${status}`}>
+          <button
+            type="button"
+            key={index}
+            className={`${css.step} ${status}`}
+            onClick={() => onClick(destStep)}
+          >
             {index + 1}
-          </div>
+          </button>
         );
       })}
     </div>
