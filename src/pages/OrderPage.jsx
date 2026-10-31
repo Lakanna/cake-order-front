@@ -16,7 +16,7 @@ const OrderPage = () => {
   //   "Review Order",
   // ];
 
-  const [currentStep, setcurrentStep] = useState(5);
+  const [currentStep, setcurrentStep] = useState(0);
 
   const [order, setOrder] = useState({
     collectionDate: new Date(),
@@ -27,6 +27,10 @@ const OrderPage = () => {
     jam: '',
     photo: '',
     descriptionCharacter: '',
+    writingOnTop: '',
+    colourOfWriting: '',
+    customWritingColour: '',
+    sides: '',
     decorations: [],
     price: 0,
   });
@@ -38,6 +42,21 @@ const OrderPage = () => {
       ...previous,
       [field]: value,
     }));
+  };
+
+  const toggleOrderArray = (field, value) => {
+    setOrder((prev) => {
+      const currentArray = prev[field] || [];
+
+      const updatedArray = currentArray.includes(value)
+        ? currentArray.filter((item) => item !== value)
+        : [...currentArray, value];
+
+      return {
+        ...prev,
+        [field]: updatedArray,
+      };
+    });
   };
 
   const nextStep = () => {
@@ -73,6 +92,7 @@ const OrderPage = () => {
         currentStep={currentStep}
         order={order}
         updateOrder={updateOrder}
+        toggleOrderArray={toggleOrderArray}
       />
 
       {currentStep === 0 && <StartOrder />}

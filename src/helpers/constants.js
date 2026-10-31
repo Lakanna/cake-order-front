@@ -16,6 +16,9 @@ import buttercream from '../pictures/cream/buttercream.jpg';
 import freshcream from '../pictures/cream/freshCream.jpg';
 import Jam from '../pictures/filling/jam.jpg';
 import NoJam from '../pictures/filling/noJam.jpg';
+import ChocShav from '../pictures/sides/ChocShavings.png';
+import ColSprinkles from '../pictures/sides/ColourSprinkle.png';
+import ButterUp from '../pictures/sides/ButtercreamUp.png';
 
 export const OrdersList = ['Order a Cake', 'Order Cupcakes'];
 
@@ -78,4 +81,33 @@ export const CreamTypes = [
 export const Filling = [
   { label: 'Yes, add jam', value: true, img: Jam },
   { label: 'No, thanks', value: false, img: NoJam },
+];
+
+export const messageColours = [
+  { name: 'White', value: '#FFFFFF' },
+  { name: 'Chocolate', value: '#68402F' },
+  { name: 'Red', value: '#C62828' },
+  { name: 'Pink', value: '#f88fc7' },
+  { name: 'Blue', value: '#2d8ae7' },
+];
+
+export const CakeSides = [
+  { name: 'Smooth', img: ButterUp },
+  { name: 'Coloured sprinkles', img: ColSprinkles },
+  { name: 'Chocolate sprinkles', img: ColSprinkles },
+  { name: 'Chocolate curls white', img: ColSprinkles },
+  { name: 'Chocolate curls choc', img: ColSprinkles },
+  { name: 'Chocolate shavings', img: ChocShav },
+  { name: 'Piping fresh cream', img: ButterUp },
+  { name: 'Piping white buttercream', img: ButterUp },
+  { name: 'Piping coloured buttercream', img: ButterUp },
+];
+
+export const DecorOnTop = [
+  'Smarties',
+  'Maltesers',
+  'Chocolate decor',
+  'Strawberries',
+  'Pink themed decor',
+  'Blue themed decor',
 ];

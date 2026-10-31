@@ -1,7 +1,12 @@
 import { StepsList } from '../../helpers/constants.js';
 import css from './OrderStepsWrapper.module.css';
 
-export const OrderStepsWrapper = ({ currentStep, order, updateOrder }) => {
+export const OrderStepsWrapper = ({
+  currentStep,
+  order,
+  updateOrder,
+  toggleOrderArray,
+}) => {
   const currentStepData = StepsList.find((step) => step.step === currentStep);
 
   if (!currentStepData) return null;
@@ -13,7 +18,11 @@ export const OrderStepsWrapper = ({ currentStep, order, updateOrder }) => {
       <h2 className={css.stepTitle}>
         {currentStepData.step}. {currentStepData.label}
       </h2>
-      <CurrentStepComponent order={order} updateOrder={updateOrder} />
+      <CurrentStepComponent
+        order={order}
+        updateOrder={updateOrder}
+        toggleOrderArray={toggleOrderArray}
+      />
     </div>
   );
 };

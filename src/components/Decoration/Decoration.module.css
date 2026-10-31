@@ -1,0 +1,149 @@
+.text {
+  margin: 1rem 0;
+}
+
+.messageField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid var(--brand-red);
+  border-radius: 10px;
+  background-color: var(--surface-pink);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 16px;
+  margin: 1rem auto;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.input::placeholder {
+  color: var(--text-secondary);
+}
+
+.input:focus {
+  outline: none;
+  border-color: #b88787;
+  box-shadow: 0 0 0 3px rgb(184 135 135 / 15%);
+}
+
+.hint {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.colourField {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.label {
+  color: #49352e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.colourOptions {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.colourOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 2px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.colourCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #d8d0c8;
+  border-radius: 50%;
+  transition: outline 0.2s;
+}
+
+.selected .colourCircle {
+  outline: 2px solid #c62828;
+  outline-offset: 3px;
+}
+
+.check {
+  color: var(--brand-yellow);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.colourName {
+  color: #49352e;
+  font-size: 12px;
+}
+
+.customOption {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #49352e;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.customOption input {
+  accent-color: #c62828;
+  width: 16px;
+  height: 16px;
+}
+
+.customInput {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #e5d9ce;
+  border-radius: 10px;
+  background: #fffdf9;
+  color: #49352e;
+  font: inherit;
+  font-size: 14px;
+}
+
+.customInput:focus {
+  outline: none;
+  border-color: #c62828;
+  box-shadow: 0 0 0 3px rgb(198 40 40 / 10%);
+}
+
+.buttonBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.decorBtn {
+  padding: 8px;
+  border-radius: 1rem;
+  border: 1px solid var(--text-secondary);
+  background-color: var(--background);
+}
+
+.selected {
+  border: 1px solid var(--brand-red);
+  background-color: var(--surface-pink);
+}
