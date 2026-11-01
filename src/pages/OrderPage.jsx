@@ -32,6 +32,8 @@ const OrderPage = () => {
     customWritingColour: '',
     sides: '',
     decorations: [],
+    customerPhone: '',
+    customerFullName: '',
     price: 0,
   });
 

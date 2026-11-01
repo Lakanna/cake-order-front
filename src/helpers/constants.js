@@ -19,6 +19,7 @@ import NoJam from '../pictures/filling/noJam.jpg';
 import ChocShav from '../pictures/sides/ChocShavings.png';
 import ColSprinkles from '../pictures/sides/ColourSprinkle.png';
 import ButterUp from '../pictures/sides/ButtercreamUp.png';
+import { CustomerDetails } from '../components/CustomerDetails/CustomerDetails.jsx';
 
 export const OrdersList = ['Order a Cake', 'Order Cupcakes'];
 
@@ -29,7 +30,8 @@ export const StepsList = [
   { step: 4, label: 'Icing & Filling', component: IcingFilling },
   { step: 5, label: 'Design', component: Design },
   { step: 6, label: 'Choose Your Decoration', component: Decoration },
-  { step: 7, label: 'Review Order', component: ReviewOrder },
+  { step: 7, label: 'Your Сontact Details', component: CustomerDetails },
+  { step: 8, label: 'Review Order', component: ReviewOrder },
 ];
 
 export const CollectionTimeList = [
