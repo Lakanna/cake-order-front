@@ -1,8 +1,9 @@
-import { CreamTypes, Filling } from '../../helpers/constants.js';
+import { CreamTypes, ExtraFilling, Filling } from '../../helpers/constants.js';
 import { ProductButton } from '../ProductButton/ProductButton.jsx';
+import { SmallBtn } from '../SmallBtn/SmallBtn.jsx';
 import css from './IcingFilling.module.css';
 
-export const IcingFilling = ({ order, updateOrder }) => {
+export const IcingFilling = ({ order, updateOrder, toggleOrderArray }) => {
   return (
     <section>
       <h3 className={css.title}>Choose your icing</h3>
@@ -23,6 +24,7 @@ export const IcingFilling = ({ order, updateOrder }) => {
           );
         })}
       </div>
+
       <h3 className={css.title}>Add jam filling?</h3>
       <div className={css.container}>
         {Filling.map((filling) => {
@@ -37,6 +39,20 @@ export const IcingFilling = ({ order, updateOrder }) => {
                 updateOrder('jam', filling.label);
               }}
               variant="default"
+            />
+          );
+        })}
+      </div>
+
+      <h3 className={css.title}>Extra Filling (additional price)</h3>
+      <div className={css.containerFilling}>
+        {ExtraFilling.map((filling) => {
+          return (
+            <SmallBtn
+              value={filling}
+              order={order.extraFilling}
+              key={filling}
+              onClick={() => toggleOrderArray('extraFilling', filling)}
             />
           );
         })}

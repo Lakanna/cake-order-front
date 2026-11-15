@@ -16,7 +16,7 @@ const OrderPage = () => {
   //   "Review Order",
   // ];
 
-  const [currentStep, setcurrentStep] = useState(0);
+  const [currentStep, setcurrentStep] = useState(6);
 
   const [order, setOrder] = useState({
     collectionDate: new Date(),
@@ -29,11 +29,16 @@ const OrderPage = () => {
     descriptionCharacter: '',
     writingOnTop: '',
     colourOfWriting: '',
+    colourButtercreamOnTop: '',
+    colourButtercreamOnSides: '',
     customWritingColour: '',
     sides: '',
+    sidesIcing: '',
     decorations: [],
+    extraFilling: '',
     customerPhone: '',
     customerFullName: '',
+    topIcing: '',
     price: 0,
   });
 

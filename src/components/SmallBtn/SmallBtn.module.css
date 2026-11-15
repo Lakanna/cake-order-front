@@ -1,0 +1,11 @@
+.decorBtn {
+  padding: 8px;
+  border-radius: 1rem;
+  border: 1px solid var(--text-secondary);
+  background-color: var(--background);
+}
+
+.decorBtn.selected {
+  border: 1px solid var(--brand-red);
+  background-color: var(--surface-pink);
+}

@@ -26,7 +26,7 @@ export const CustomerDetails = ({ order, updateOrder }) => {
           onChange={(e) => updateOrder('customerPhone', e.target.value)}
         />
       </label>
-      <div className={css.optionsContainer}>
+      {/* <div className={css.optionsContainer}>
         <p>Want to save your details for next time?</p>
         {[
           { action: 'Log in', path: '/login', variant: 'primary' },
@@ -46,7 +46,7 @@ export const CustomerDetails = ({ order, updateOrder }) => {
             {option.action}
           </button>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

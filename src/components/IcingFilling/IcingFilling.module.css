@@ -7,3 +7,10 @@
 .title {
   margin: 1rem 0;
 }
+
+.containerFilling {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  flex-direction: column;
+}

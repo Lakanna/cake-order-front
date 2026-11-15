@@ -100,9 +100,8 @@ export const CakeSides = [
   { name: 'Chocolate curls white', img: ColSprinkles },
   { name: 'Chocolate curls choc', img: ColSprinkles },
   { name: 'Chocolate shavings', img: ChocShav },
-  { name: 'Piping fresh cream', img: ButterUp },
-  { name: 'Piping white buttercream', img: ButterUp },
-  { name: 'Piping coloured buttercream', img: ButterUp },
+  { name: 'Top-to-Bottom Piping', img: ButterUp },
+  { name: 'Rosette Piping', img: ButterUp },
 ];
 
 export const DecorOnTop = [
@@ -112,4 +111,17 @@ export const DecorOnTop = [
   'Strawberries',
   'Pink themed decor',
   'Blue themed decor',
+];
+
+export const ExtraFilling = [
+  'Black Forest filling',
+  'Kinder Bueno',
+  'Oreo Buttercream',
+  'Fruit inside',
+];
+
+export const TopIcing = [
+  'Fresh Cream',
+  'White Buttercream',
+  'Coloured Buttercream',
 ];
