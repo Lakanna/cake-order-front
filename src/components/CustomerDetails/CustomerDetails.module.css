@@ -85,3 +85,14 @@
   color: var(--brand-red);
   border: 1px solid var(--yellow-pale);
 }
+
+.error {
+  display: block;
+  margin: 5px 0 0 4px;
+  color: var(--error);
+  font-size: 12px;
+}
+
+.input:has(+ .error) {
+  border-color: var(--error);
+}

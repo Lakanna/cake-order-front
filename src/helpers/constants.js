@@ -125,3 +125,27 @@ export const TopIcing = [
   'White Buttercream',
   'Coloured Buttercream',
 ];
+
+export const OrderLabels = {
+  collectionDate: 'Collection date',
+  collectionTime: 'Collection time',
+  size: 'Cake size',
+  sponge: 'Sponge flavour',
+  icing: 'Icing',
+  jam: 'Jam filling',
+  photo: 'Photo for printing',
+  descriptionCharacter: 'Character description',
+  writingOnTop: 'Message on the cake',
+  colourOfWriting: 'Message colour',
+  colourButtercreamOnTop: 'Top buttercream colour',
+  colourButtercreamOnSides: 'Side buttercream colour',
+  additionalNotes: 'Additional requests',
+  decorations: 'Decorations',
+  extraFilling: 'Extra filling',
+  customerPhone: 'Customer Phone number',
+  customerFullName: 'Customer name',
+  topIcing: 'Top icing',
+  price: 'Total price',
+  sidesIcing: 'Sides icing',
+  sides: 'Cake sides',
+};

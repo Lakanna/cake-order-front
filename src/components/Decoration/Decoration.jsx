@@ -186,6 +186,15 @@ export const Decoration = ({ order, updateOrder, toggleOrderArray }) => {
           );
         })}
       </div>
+
+      <h3 className={css.text}>Anything else you'd like us to know?</h3>
+      <textarea
+        className={css.input}
+        placeholder="Add any other details or special requests here..."
+        value={order.additionalNotes}
+        onChange={(e) => updateOrder('additionalNotes', e.target.value)}
+        maxLength={200}
+      />
     </section>
   );
 };

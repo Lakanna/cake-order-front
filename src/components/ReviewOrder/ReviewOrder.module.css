@@ -1,0 +1,23 @@
+.title {
+  margin-bottom: 20px;
+}
+
+.orderSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+.summaryValue {
+  font-weight: 600;
+  color: var(--brand-red);
+}
