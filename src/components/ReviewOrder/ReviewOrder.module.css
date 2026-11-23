@@ -1,5 +1,9 @@
 .title {
-  margin-bottom: 20px;
+  margin: 20px 0;
+}
+
+.decorationDescription {
+  margin-top: 1rem;
 }
 
 .orderSummary {
@@ -20,4 +24,8 @@
 .summaryValue {
   font-weight: 600;
   color: var(--brand-red);
+}
+
+.bold {
+  font-weight: bold;
 }

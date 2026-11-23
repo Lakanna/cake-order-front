@@ -1,11 +1,20 @@
 import { OrderLabels } from '../../helpers/constants.js';
+import {
+  createAdditionalNotes,
+  createCakeDescription,
+  createCollectionDescription,
+  createCustomerNameDescription,
+  createCustomerPhoneDescription,
+  createDecorationDescription,
+  createTopDescription,
+} from '../OrderDescription/OrderDescription.js';
 import css from './ReviewOrder.module.css';
 
 export const ReviewOrder = ({ order }) => {
   return (
     <section>
       <h3 className={css.title}>Review Your Order</h3>
-      <div className={css.orderSummary}>
+      {/* <div className={css.orderSummary}>
         {Object.entries(order).map(([key, value]) => {
           console.log(Object.entries(order));
           if (
@@ -34,6 +43,48 @@ export const ReviewOrder = ({ order }) => {
             </div>
           );
         })}
+      </div> */}
+      <div>
+        {createCakeDescription(order).map((part, index) => (
+          <span key={index} className={part.bold ? css.bold : ''}>
+            {part.text}
+          </span>
+        ))}
+        .
+        <p className={css.decorationDescription}>
+          {createDecorationDescription(order)}
+        </p>
+        <p className={css.decorationDescription}>
+          {createTopDescription(order)}
+        </p>
+        <p className={css.decorationDescription}>
+          {createAdditionalNotes(order).map((part, index) => (
+            <span key={index} className={part.bold ? css.bold : ''}>
+              {part.text}
+            </span>
+          ))}
+        </p>
+        <p className={css.decorationDescription}>
+          {createCollectionDescription(order).map((part, index) => (
+            <span key={index} className={part.bold ? css.bold : ''}>
+              {part.text}
+            </span>
+          ))}
+        </p>
+        <p className={css.decorationDescription}>
+          {createCustomerNameDescription(order).map((part, index) => (
+            <span key={index} className={part.bold ? css.bold : ''}>
+              {part.text}
+            </span>
+          ))}
+        </p>
+        <p className={css.decorationDescription}>
+          {createCustomerPhoneDescription(order).map((part, index) => (
+            <span key={index} className={part.bold ? css.bold : ''}>
+              {part.text}
+            </span>
+          ))}
+        </p>
       </div>
       <h4 className={css.title}>Important: Advance Payment Required</h4>
       <div className={css.orderSummary}>

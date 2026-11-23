@@ -7,15 +7,6 @@ import { OrderStepsWrapper } from '../components/OrderStepsWrapper/OrderStepsWra
 import { StartOrder } from '../components/StartOrder/StartOrder.jsx';
 
 const OrderPage = () => {
-  // const steps = [
-  //   "Collection Date",
-  //   "Cake Size",
-  //   "Sponge",
-  //   "Icing & Filling",
-  //   "Design",
-  //   "Review Order",
-  // ];
-
   const [currentStep, setcurrentStep] = useState(0);
 
   const [order, setOrder] = useState({

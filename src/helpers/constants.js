@@ -114,7 +114,7 @@ export const DecorOnTop = [
 ];
 
 export const ExtraFilling = [
-  'Black Forest filling',
+  'Black Forest',
   'Kinder Bueno',
   'Oreo Buttercream',
   'Fruit inside',
